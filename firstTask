@@ -1,0 +1,10 @@
+def convertNumToNegativeBianry(num, bits):
+     binaryNum=bin(num)[2:].zfill(bits)
+     print("the binary of number "+binaryNum)
+     num1=bin(1)[2:].zfill(8)
+    
+     res = bin(int(binaryNum,2) + int(num1,2))
+     print(res[2:].zfill(bits))
+
+
+convertNumToNegativeBianry(17,8)
